@@ -58,5 +58,8 @@ public interface BLFacade  {
 	 */	
 	@WebMethod public void initializeBD();
 
+
+	@WebMethod public void erregistratu(String izena, String pass, String nAN, String korreoa, String kZ, String adina);
+
 	
 }

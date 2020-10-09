@@ -19,6 +19,7 @@ import configuration.ConfigXML;
 import configuration.UtilDate;
 import domain.Event;
 import domain.Question;
+import domain.User;
 import exceptions.QuestionAlreadyExist;
 
 /**
@@ -260,6 +261,27 @@ public boolean existQuestion(Event event, String question) {
 	public void close(){
 		db.close();
 		System.out.println("DataBase closed");
+	}
+
+	
+
+	public void erregistratu(User erab) {
+		db.getTransaction().begin();
+		db.persist(erab);
+		db.getTransaction().commit();
+		System.out.println("Erregistratu zara!!!!!!");
+	}
+
+	public void erregistratu(String izena, String pass, String NAN, String korreoa, String KZ,
+			String adina) {
+		if(NAN.isEmpty()||korreoa.isEmpty()||KZ.isEmpty()) {
+			throw new NullPointerException();
+		}
+
+		User erab = new User(izena, pass, NAN, korreoa, KZ, adina);
+		
+		this.erregistratu(erab);
+		
 	}
 	
 }

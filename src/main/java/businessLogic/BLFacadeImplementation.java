@@ -10,6 +10,7 @@ import javax.jws.WebService;
 import configuration.ConfigXML;
 import dataAccess.DataAccess;
 import domain.Question;
+import domain.User;
 import domain.Event;
 import exceptions.EventFinished;
 import exceptions.QuestionAlreadyExist;
@@ -122,6 +123,18 @@ public class BLFacadeImplementation  implements BLFacade {
     	dbManager.open(false);
 		dbManager.initializeDB();
 		dbManager.close();
+	}
+
+	@Override
+	public void erregistratu(String izena, String pass, String NAN, String korreoa, String KZ, String adina) {
+		if(NAN.isEmpty()||korreoa.isEmpty()||KZ.isEmpty()) {
+			throw new NullPointerException();
+		}
+
+		User erab = new User(izena, pass, NAN, korreoa, KZ, adina);
+		DataAccess dbmanager = new DataAccess();
+		dbmanager.erregistratu(erab);
+		dbmanager.close();
 	}
 
 }
