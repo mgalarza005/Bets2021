@@ -272,7 +272,7 @@ public boolean existQuestion(Event event, String question) {
 		System.out.println("Erregistratu zara!!!!!!");
 	}
 
-	public void erregistratu(String izena, String pass, String NAN, String korreoa, String KZ,
+	public void erregistratu1(String izena, String pass, String NAN, String korreoa, String KZ,
 			String adina) {
 		if(NAN.isEmpty()||korreoa.isEmpty()||KZ.isEmpty()) {
 			throw new NullPointerException();

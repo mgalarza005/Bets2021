@@ -32,7 +32,105 @@ public class FacadeMockTest {
 
 	@InjectMocks
 	BLFacade sut=new BLFacadeImplementation(mockedDataAccess);  
+	
+	
+	
+	
+	
+	@Test
+	public void test1() {
+		try {
+			//define paramaters
+			String queryText="proba galdera";
+			Float betMinimum=new Float(2);
+			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+			Date oneDate=null;;
+			try {
+				oneDate = sdf.parse("05/10/2022");
+			} catch (ParseException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}	
+			
+			//configure Mock
+			Mockito.doReturn(oneDate).when(mockedEvent).getEventDate();
+			Mockito.when(mockedDataAccess.createQuestion(Mockito.any(Event.class),Mockito.any(String.class), Mockito.any(Integer.class))).thenThrow(QuestionAlreadyExist.class);
+			
 
+			//invoke System Under Test (sut) 
+			sut.createQuestion(mockedEvent, queryText, betMinimum);
+			
+			//if the program continues fail
+		    fail();
+		   } catch (QuestionAlreadyExist e) {
+			// TODO Auto-generated catch block
+			   
+			// if the program goes to this point OK
+			assertTrue(true);
+			} catch (EventFinished e) {
+				// if the program goes to this point fail
+			    fail();
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		   }
+	
+	
+	
+	@Test
+	//sut.createQuestion:  The event has NOT a question with a queryText.
+	public void test2() {
+			try {
+				//define paramaters
+				String queryText="proba galdera";
+				Float betMinimum=new Float(2);
+				SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+				Date oneDate=null;;
+				try {
+					oneDate = sdf.parse("05/10/2022");
+				} catch (ParseException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}	
+				
+				//configure Mock
+				Mockito.doReturn(oneDate).when(mockedEvent).getEventDate();
+				Mockito.doReturn(new Question(queryText, betMinimum,mockedEvent)).when(mockedDataAccess).createQuestion(Mockito.any(Event.class),Mockito.any(String.class), Mockito.any(Integer.class));
+
+				
+
+				//invoke System Under Test (sut) 
+				Question q=sut.createQuestion(mockedEvent, queryText, betMinimum);
+				
+				//verify the results
+				//Mockito.verify(dataAccess,Mockito.times(1)).createQuestion(Mockito.any(Event.class),Mockito.any(String.class), Mockito.any(Integer.class));
+				
+				
+				ArgumentCaptor<Event> eventCaptor = ArgumentCaptor.forClass(Event.class);
+				ArgumentCaptor<String> questionStringCaptor = ArgumentCaptor.forClass(String.class);
+				ArgumentCaptor<Float> betMinimunCaptor = ArgumentCaptor.forClass(Float.class);
+				
+				Mockito.verify(mockedDataAccess,Mockito.times(1)).createQuestion(eventCaptor.capture(),questionStringCaptor.capture(), betMinimunCaptor.capture());
+				Float f=betMinimunCaptor.getValue();
+
+				assertEquals(eventCaptor.getValue(),mockedEvent);
+				assertEquals(questionStringCaptor.getValue(),queryText);
+				assertEquals(betMinimunCaptor.getValue(),betMinimum);
+
+			   } catch (QuestionAlreadyExist e) {
+				// TODO Auto-generated catch block
+				assertTrue(true);
+				} catch (EventFinished e) {
+				    fail();
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			   }
+		
+	
+	
+	
+	
 	@Test
 	//sut.createQuestion: The user is already registered
 	public void test3() {
@@ -150,7 +248,6 @@ public class FacadeMockTest {
 			String KZ="a"; 
 			String adina="";
 			
-			sut.erregistratu(izena, pass, NAN, korreoa, KZ, adina);
 			
 			//invoke System Under Test (sut)  
 			sut.erregistratu(izena, pass, NAN, korreoa, KZ, adina);
@@ -174,7 +271,6 @@ public class FacadeMockTest {
 			String KZ="a"; 
 			String adina="";
 						
-			sut.erregistratu(izena, pass, NAN, korreoa, KZ, adina);
 			
 			//invoke System Under Test (sut)  
 						
@@ -202,7 +298,7 @@ public class FacadeMockTest {
 			User u = new User (izena, pass, NAN, korreoa, KZ, adina);		
 
 			 			
-			sut.erregistratu(izena, pass, NAN, korreoa, KZ, adina);
+	
 			
 			//invoke System Under Test (sut)  
 			//Question q=sut.createQuestion(ev, queryText, betMinimum);
@@ -274,7 +370,7 @@ public class FacadeMockTest {
 			ArgumentCaptor<String> adinaCaptor = ArgumentCaptor.forClass(String.class);
 
 			
-			Mockito.verify(mockedDataAccess, Mockito.times(1)).erregistratu(
+			Mockito.verify(mockedDataAccess, Mockito.times(1)).erregistratu1(
 					izenaCaptor.capture(),passCaptor.capture(),
 					NANCaptor.capture(),korreoCaptor.capture(),KZCaptor.capture(),adinaCaptor.capture());
 			System.out.println(izenaCaptor.getValue() + "eta"+izena );

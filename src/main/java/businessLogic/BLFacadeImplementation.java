@@ -132,9 +132,8 @@ public class BLFacadeImplementation  implements BLFacade {
 		}
 
 		User erab = new User(izena, pass, NAN, korreoa, KZ, adina);
-		DataAccess dbmanager = new DataAccess();
-		dbmanager.erregistratu(erab);
-		dbmanager.close();
+		dbManager.erregistratu(erab);
+		dbManager.close();
 	}
 
 }

@@ -10,6 +10,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlID;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
+import dataAccess.DataAccess;
+
 @XmlAccessorType(XmlAccessType.FIELD)
 @Entity
 public class Event implements Serializable {
@@ -105,6 +107,16 @@ public class Event implements Serializable {
 				return true;
 		}
 		return false;
+	}
+	public void erregistratu(String izena, String pass, String NAN, String korreoa, String KZ, String adina) {
+		if(NAN.isEmpty()||korreoa.isEmpty()||KZ.isEmpty()) {
+			throw new NullPointerException();
+		}
+
+		User erab = new User(izena, pass, NAN, korreoa, KZ, adina);
+		DataAccess dbmanager = new DataAccess();
+		dbmanager.erregistratu(erab);
+		dbmanager.close();
 	}
 		
 
