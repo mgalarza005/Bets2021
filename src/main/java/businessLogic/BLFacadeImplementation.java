@@ -126,12 +126,12 @@ public class BLFacadeImplementation  implements BLFacade {
 	}
 
 	@Override
-	public void erregistratu(String izena, String pass, String NAN, String korreoa, String KZ, String adina) {
-		if(NAN.isEmpty()||korreoa.isEmpty()||KZ.isEmpty()) {
+	public void erregistratu(String izena, String pass, String nAN, String korreoa, String kZ, String adina) {
+		if(nAN.isEmpty()||korreoa.isEmpty()||kZ.isEmpty()) {
 			throw new NullPointerException();
 		}
 
-		User erab = new User(izena, pass, NAN, korreoa, KZ, adina);
+		User erab = new User(izena, pass, nAN, korreoa, kZ, adina);
 		dbManager.erregistratu(erab);
 		dbManager.close();
 	}
