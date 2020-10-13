@@ -115,7 +115,7 @@ public class Event implements Serializable {
 
 		User erab = new User(izena, pass, NAN, korreoa, KZ, adina);
 		DataAccess dbmanager = new DataAccess();
-		dbmanager.erregistratu(erab);
+		dbmanager.erregistratu(izena, pass, NAN, korreoa, KZ, adina);
 		dbmanager.close();
 	}
 		

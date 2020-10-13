@@ -131,8 +131,7 @@ public class BLFacadeImplementation  implements BLFacade {
 			throw new NullPointerException();
 		}
 
-		User erab = new User(izena, pass, nAN, korreoa, kZ, adina);
-		dbManager.erregistratu(erab);
+		dbManager.erregistratu(izena, pass, nAN, korreoa, kZ, adina);
 		dbManager.close();
 	}
 

@@ -130,7 +130,7 @@ public class FacadeMockTest {
 	
 	
 	
-	
+	/*
 	@Test
 	//sut.createQuestion: The user is already registered
 	public void test3() {
@@ -165,7 +165,7 @@ public class FacadeMockTest {
 			// TODO Auto-generated catch block
 			assertTrue(true);
 		}
-	}
+	}*/
 	@Test
 	public void testParametrorikEzStringMotakoa() {
 		try {
@@ -370,7 +370,7 @@ public class FacadeMockTest {
 			ArgumentCaptor<String> adinaCaptor = ArgumentCaptor.forClass(String.class);
 
 			
-			Mockito.verify(mockedDataAccess, Mockito.times(1)).erregistratu1(
+			Mockito.verify(mockedDataAccess, Mockito.times(1)).erregistratu(
 					izenaCaptor.capture(),passCaptor.capture(),
 					NANCaptor.capture(),korreoCaptor.capture(),KZCaptor.capture(),adinaCaptor.capture());
 			System.out.println(izenaCaptor.getValue() + "eta"+izena );
