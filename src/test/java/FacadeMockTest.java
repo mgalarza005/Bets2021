@@ -75,15 +75,12 @@ public class FacadeMockTest {
 			   } catch (NullPointerException e) {
 				// TODO Auto-generated catch block
 				assertTrue(true);
-				} finally {
-					  //Remove the created objects in the database (cascade removing)   
-			          //boolean b=testBL.removeEvent(ev);
-			           //System.out.println("Finally "+b);          
-			        }
+				} 
 			   }
 	
 	@Test
 	//Estaliko den baliokidetasun klasea 1,2,5,6,9,10,13,14,17,18,21,22
+	//Test hau ez da ondo joan behar, ez duelako erabiltzailea erregistratu behar eta erregistratu egiten du
 	public void erabiltzaileaJadanikErregistratutaDago() {
 		try {
 			String izena ="Mikeel";
@@ -145,11 +142,7 @@ public class FacadeMockTest {
 		   } catch (NullPointerException e) {
 			// TODO Auto-generated catch block
 			assertTrue(true);
-			} finally {
-				  //Remove the created objects in the database (cascade removing)   
-		          //boolean b=testBL.removeEvent(ev);
-		           //System.out.println("Finally "+b);          
-		        }
+			} 
 		   }
 	//Estaliko den baliokidetasun klasea 8
 		@Test
@@ -169,11 +162,7 @@ public class FacadeMockTest {
 			   } catch (NullPointerException e) {
 				// TODO Auto-generated catch block
 				assertTrue(true);
-				} finally {
-					  //Remove the created objects in the database (cascade removing)   
-			          //boolean b=testBL.removeEvent(ev);
-			           //System.out.println("Finally "+b);          
-			        }
+				} 
 			   }
 		//Estaliko den baliokidetasun klasea 12
 		@Test
@@ -193,11 +182,7 @@ public class FacadeMockTest {
 			   } catch (NullPointerException e) {
 				// TODO Auto-generated catch block
 				assertTrue(true);
-				} finally {
-					  //Remove the created objects in the database (cascade removing)   
-			          //boolean b=testBL.removeEvent(ev);
-			           //System.out.println("Finally "+b);          
-			        }
+				} 
 			   }
 		//Estaliko den baliokidetasun klasea 16
 		@Test
@@ -217,11 +202,7 @@ public class FacadeMockTest {
 			   } catch (NullPointerException e) {
 				// TODO Auto-generated catch block
 				assertTrue(true);
-				} finally {
-					  //Remove the created objects in the database (cascade removing)   
-			          //boolean b=testBL.removeEvent(ev);
-			           //System.out.println("Finally "+b);          
-			        }
+				} 
 			   }
 		//Estaliko den baliokidetasun klasea 20
 		@Test
@@ -241,11 +222,7 @@ public class FacadeMockTest {
 			   } catch (NullPointerException e) {
 				// TODO Auto-generated catch block
 				assertTrue(true);
-				} finally {
-					  //Remove the created objects in the database (cascade removing)   
-			          //boolean b=testBL.removeEvent(ev);
-			           //System.out.println("Finally "+b);          
-			        }
+				}
 			   }
 		//Estaliko den baliokidetasun klasea 24
 		@Test
@@ -265,11 +242,7 @@ public class FacadeMockTest {
 			   } catch (NullPointerException e) {
 				// TODO Auto-generated catch block
 				assertTrue(true);
-				} finally {
-					  //Remove the created objects in the database (cascade removing)   
-			          //boolean b=testBL.removeEvent(ev);
-			           //System.out.println("Finally "+b);          
-			        }
+				} 
 			   }
 		
 	//Estaliko den baliokidetasun klasea 3
@@ -292,11 +265,7 @@ public class FacadeMockTest {
 		   } catch (NullPointerException e) {
 			// TODO Auto-generated catch block
 			assertTrue(true);
-			} finally {
-				  //Remove the created objects in the database (cascade removing)   
-		          //boolean b=testBL.removeEvent(ev);
-		           //System.out.println("Finally "+b);          
-		        }
+			} 
 		   }
 	
 	//Estaliko den baliokidetasun klasea 3
@@ -320,11 +289,7 @@ public class FacadeMockTest {
 		   } catch (NullPointerException e) {
 			// TODO Auto-generated catch block
 			assertTrue(true);
-			} finally {
-				  //Remove the created objects in the database (cascade removing)   
-		          //boolean b=testBL.removeEvent(ev);
-		           //System.out.println("Finally "+b);          
-		        }
+			} 
 		   }
 	//Estaliko den baliokidetasun klasea 7
 		@Test
@@ -347,12 +312,9 @@ public class FacadeMockTest {
 			   } catch (NullPointerException e) {
 				// TODO Auto-generated catch block
 				assertTrue(true);
-				} finally {
-					  //Remove the created objects in the database (cascade removing)   
-			          //boolean b=testBL.removeEvent(ev);
-			           //System.out.println("Finally "+b);          
-			        }
-			   }
+				} 
+		}
+		
 		//Estaliko den baliokidetasun klasea 11
 		@Test
 		public void testParametroBatHustsik3() {
@@ -374,11 +336,7 @@ public class FacadeMockTest {
 			   } catch (NullPointerException e) {
 				// TODO Auto-generated catch block
 				assertTrue(true);
-				} finally {
-					  //Remove the created objects in the database (cascade removing)   
-			          //boolean b=testBL.removeEvent(ev);
-			           //System.out.println("Finally "+b);          
-			        }
+				} 
 			   }
 		//Estaliko den baliokidetasun klasea 15
 		@Test
@@ -401,11 +359,7 @@ public class FacadeMockTest {
 			   } catch (NullPointerException e) {
 				// TODO Auto-generated catch block
 				assertTrue(true);
-				} finally {
-					  //Remove the created objects in the database (cascade removing)   
-			          //boolean b=testBL.removeEvent(ev);
-			           //System.out.println("Finally "+b);          
-			        }
+				} 
 			   }
 		//Estaliko den baliokidetasun klasea 19
 		@Test
@@ -428,11 +382,7 @@ public class FacadeMockTest {
 			   } catch (NullPointerException e) {
 				// TODO Auto-generated catch block
 				assertTrue(true);
-				} finally {
-					  //Remove the created objects in the database (cascade removing)   
-			          //boolean b=testBL.removeEvent(ev);
-			           //System.out.println("Finally "+b);          
-			        }
+				}
 			   }
 		//Estaliko den baliokidetasun klasea 23
 		@Test
@@ -455,10 +405,6 @@ public class FacadeMockTest {
 			   } catch (NullPointerException e) {
 				// TODO Auto-generated catch block
 				assertTrue(true);
-				} finally {
-					  //Remove the created objects in the database (cascade removing)   
-			          //boolean b=testBL.removeEvent(ev);
-			           //System.out.println("Finally "+b);          
-			        }
+				} 
 			   }
 }
