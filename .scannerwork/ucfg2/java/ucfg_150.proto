@@ -1,15 +1,17 @@
 
-!domain.Apustua#getApustuNumber()IH
->C:/Users/MIKEL1/git/Bets2021/src/main/java/domain/Apustua.javah h("1*¶
+.domain.Apustua#getUsrAnitz()Ljava/lang/String;H
+>C:/Users/MIKEL1/git/Bets2021/src/main/java/domain/Apustua.javaX X("1*Ã
 1H
->C:/Users/MIKEL1/git/Bets2021/src/main/java/domain/Apustua.javai	 i(’
-
+>C:/Users/MIKEL1/git/Bets2021/src/main/java/domain/Apustua.javaY	 Y(
+Š
 H
->C:/Users/MIKEL1/git/Bets2021/src/main/java/domain/Apustua.javai	 i(
-%0java.lang.Integer"__id*$*"
-domain.Apustua"
-apustuNumber"R
+>C:/Users/MIKEL1/git/Bets2021/src/main/java/domain/Apustua.javaY	 Y(
+%0java.lang.String"__id* *
+domain.Apustua"
+
+usrAnitz"d
 H
->C:/Users/MIKEL1/git/Bets2021/src/main/java/domain/Apustua.javai i(
-""B
+>C:/Users/MIKEL1/git/Bets2021/src/main/java/domain/Apustua.javaY Y(
+
+%0java.lang.StringB
 domain.Apustua

@@ -1,16 +1,9 @@
 
->configuration.ConfigXML#getInstance()Lconfiguration/ConfigXML;S
-GC:/Users/MIKEL1/git/Bets2021/src/main/java/configuration/ConfigXML.javaé é($"1*˛
-1S
-GC:/Users/MIKEL1/git/Bets2021/src/main/java/configuration/ConfigXML.javaè	 è(´
-®
-S
-GC:/Users/MIKEL1/git/Bets2021/src/main/java/configuration/ConfigXML.javaè	 è(
-%0configuration.ConfigXML"__id*,**
-configuration.ConfigXML"
-theInstance"v
-S
-GC:/Users/MIKEL1/git/Bets2021/src/main/java/configuration/ConfigXML.javaè è(
-
-%0configuration.ConfigXMLB"
+*configuration.ConfigXML#isDatabaseLocal()ZQ
+GC:/Users/MIKEL1/git/Bets2021/src/main/java/configuration/ConfigXML.javaA A("1*≥
+1Q
+GC:/Users/MIKEL1/git/Bets2021/src/main/java/configuration/ConfigXML.javaB	 B("[
+Q
+GC:/Users/MIKEL1/git/Bets2021/src/main/java/configuration/ConfigXML.javaB B(
+""B
 configuration.ConfigXML

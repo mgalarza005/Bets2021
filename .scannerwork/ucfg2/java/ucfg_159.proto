@@ -1,9 +1,16 @@
 
-*configuration.ConfigXML#isDatabaseLocal()ZQ
-GC:/Users/MIKEL1/git/Bets2021/src/main/java/configuration/ConfigXML.javaA A("1*≥
+5configuration.ConfigXML#getLocale()Ljava/lang/String;Q
+GC:/Users/MIKEL1/git/Bets2021/src/main/java/configuration/ConfigXML.java1 1("1*Â
 1Q
-GC:/Users/MIKEL1/git/Bets2021/src/main/java/configuration/ConfigXML.javaB	 B("[
+GC:/Users/MIKEL1/git/Bets2021/src/main/java/configuration/ConfigXML.java2	 2(ù
+ö
 Q
-GC:/Users/MIKEL1/git/Bets2021/src/main/java/configuration/ConfigXML.javaB B(
-""B
+GC:/Users/MIKEL1/git/Bets2021/src/main/java/configuration/ConfigXML.java2	 2(
+%0java.lang.String"__id*'*%
+configuration.ConfigXML"
+locale"m
+Q
+GC:/Users/MIKEL1/git/Bets2021/src/main/java/configuration/ConfigXML.java2 2(
+
+%0java.lang.StringB
 configuration.ConfigXML

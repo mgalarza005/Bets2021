@@ -1,17 +1,16 @@
 
-9configuration.ConfigXML#getDbFilename()Ljava/lang/String;S
-GC:/Users/MIKEL1/git/Bets2021/src/main/java/configuration/ConfigXML.javaû û("1*Ô
+>configuration.ConfigXML#getInstance()Lconfiguration/ConfigXML;S
+GC:/Users/MIKEL1/git/Bets2021/src/main/java/configuration/ConfigXML.javaé é($"1*˛
 1S
-GC:/Users/MIKEL1/git/Bets2021/src/main/java/configuration/ConfigXML.javaü	 ü(£
-†
+GC:/Users/MIKEL1/git/Bets2021/src/main/java/configuration/ConfigXML.javaè	 è(´
+®
 S
-GC:/Users/MIKEL1/git/Bets2021/src/main/java/configuration/ConfigXML.javaü	 ü(
-%0java.lang.String"__id*+*)
-configuration.ConfigXML"
-
-dbFilename"o
+GC:/Users/MIKEL1/git/Bets2021/src/main/java/configuration/ConfigXML.javaè	 è(
+%0configuration.ConfigXML"__id*,**
+configuration.ConfigXML"
+theInstance"v
 S
-GC:/Users/MIKEL1/git/Bets2021/src/main/java/configuration/ConfigXML.javaü ü(
-
-%0java.lang.StringB
+GC:/Users/MIKEL1/git/Bets2021/src/main/java/configuration/ConfigXML.javaè è(
+
+%0configuration.ConfigXMLB"
 configuration.ConfigXML

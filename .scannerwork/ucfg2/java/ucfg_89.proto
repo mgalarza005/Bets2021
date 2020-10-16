@@ -1,44 +1,15 @@
 
-)domain.Kuota#toString()Ljava/lang/String;F
-<C:/Users/MIKEL1/git/Bets2021/src/main/java/domain/Kuota.javai i("1*œ
+domain.Kuota#getKuotaNumber()IF
+<C:/Users/MIKEL1/git/Bets2021/src/main/java/domain/Kuota.javaQ Q("1*­
 1F
-<C:/Users/MIKEL1/git/Bets2021/src/main/java/domain/Kuota.javaj	 j(†
-ƒ
+<C:/Users/MIKEL1/git/Bets2021/src/main/java/domain/Kuota.javaR	 R(
+Š
 F
-<C:/Users/MIKEL1/git/Bets2021/src/main/java/domain/Kuota.javaj j(
-%0java.lang.String"__id**
-domain.Kuota"
-onura”
-‘
+<C:/Users/MIKEL1/git/Bets2021/src/main/java/domain/Kuota.javaR	 R(
+%0java.lang.Integer"__id*!*
+domain.Kuota"
+kuotaNumber"P
 F
-<C:/Users/MIKEL1/git/Bets2021/src/main/java/domain/Kuota.javaj	 j(
-%1java.lang.String"__concat*	
-Onura: *
-
-%0java.lang.String›
-˜
-F
-<C:/Users/MIKEL1/git/Bets2021/src/main/java/domain/Kuota.javaj	 j()
-%2java.lang.String"__concat*
-
-%1java.lang.String*
- eta emaitza: ˆ
-…
-F
-<C:/Users/MIKEL1/git/Bets2021/src/main/java/domain/Kuota.javaj* j(1
-%3java.lang.String"__id**
-domain.Kuota"	
-emaitza¡
-ž
-F
-<C:/Users/MIKEL1/git/Bets2021/src/main/java/domain/Kuota.javaj	 j(1
-%4java.lang.String"__concat*
-
-%2java.lang.String*
-
-%3java.lang.String"b
-F
-<C:/Users/MIKEL1/git/Bets2021/src/main/java/domain/Kuota.javaj j(2
-
-%4java.lang.StringB
+<C:/Users/MIKEL1/git/Bets2021/src/main/java/domain/Kuota.javaR R(
+""B
 domain.Kuota
