@@ -112,13 +112,20 @@ public class FacadeMockTest {
 					izenaCaptor.capture(),passCaptor.capture(),
 					NANCaptor.capture(),korreoCaptor.capture(),KZCaptor.capture(),adinaCaptor.capture());
 			
-			
+			/*
 			assertTrue(izenaCaptor.getValue()!=izena);
 			assertTrue(passCaptor.getValue()!=pass);
 			assertTrue(NANCaptor.getValue()!=NAN);
 			assertTrue(korreoCaptor.getValue()!=korreoa);
 			assertTrue(KZCaptor.getValue()!=KZ);
-			assertTrue(adinaCaptor.getValue()!=adina);
+			assertTrue(adinaCaptor.getValue()!=adina); */
+			
+			assertTrue(izenaCaptor.getValue()==izena);
+			assertTrue(passCaptor.getValue()==pass);
+			assertTrue(NANCaptor.getValue()==NAN);
+			assertTrue(korreoCaptor.getValue()==korreoa);
+			assertTrue(KZCaptor.getValue()==KZ);
+			assertTrue(adinaCaptor.getValue()==adina);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			assertTrue(true);
