@@ -1,7 +1,7 @@
 organization=mgalarza005
 projectKey=Bets2021
 serverUrl=https://sonarcloud.io
-serverVersion=8.0.0.13288
+serverVersion=8.0.0.13455
 dashboardUrl=https://sonarcloud.io/dashboard?id=Bets2021
-ceTaskId=AXUi_PvprFLaW3K3rHZ1
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXUi_PvprFLaW3K3rHZ1
+ceTaskId=AXU9DJmrW6RL6b7cYb6X
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXU9DJmrW6RL6b7cYb6X

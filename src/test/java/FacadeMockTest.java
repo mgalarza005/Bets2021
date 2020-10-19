@@ -84,7 +84,7 @@ public class FacadeMockTest {
 	public void erabiltzaileaJadanikErregistratutaDago() {
 		try {
 			String izena ="Mikeel";
-			String pass ="12"; 
+			String pass ="12";     
 			String NAN="12"; 
 			String korreoa="12@12"; 
 			String KZ="B"; 
