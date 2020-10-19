@@ -115,23 +115,27 @@ public class FacadeMockTest {
 					NANCaptor.capture(),korreoCaptor.capture(),KZCaptor.capture(),adinaCaptor.capture());
 			
 			
-			//Kasu honetan, argi dago ez lukeela erabiltzailea erregistratu behar, jadanik erregistratuta dagoelako, baina ahala ere gure softwareak ez du
-			//hau kontuan hartzen eta berriro sartzen du. Hau kodearen errorea bat da. Eta testak, konprobatzen du ArgumentCaptor-ekin lortutako 
-			// balioak ezinezkoa izen behar dela hasieran hasieratu ditugun parametroei. Izan ere, ArgumentCaptor-ek lortutako balioak eta hasierako 
-			// berdinak badira erabiltzailea berriro sartu dueala esan nahi du eta gainera, Mockito.times(1)).erregistratu konprobatuz behin exekutatzen dela 
-			//erregistratu metodoa eta kasu honetan ez litzateke exekutatu beharko. Hau da, Mockito.times(0)).erregistratu izan beharko litzake eta errorik  
-			//ez agertu
+			// Kasu honetan, argi dago ez lukeela erabiltzailea erregistratu behar, jadanik erregistratuta dagoelako, baina ahala ere gure softwareak ez du
+			/* hau kontuan hartzen eta berriro sartzen du. Hau kodearen errorea bat da. Eta testak, konprobatzen du ArgumentCaptor-ekin lortutako 
+			/* balioak ezinezkoa izen behar dela hasieran hasieratu ditugun parametroei. Izan ere, ArgumentCaptor-ek lortutako balioak eta hasierako 
+			/* berdinak badira erabiltzailea berriro sartu dueala esan nahi du eta gainera, Mockito.times(1)).erregistratu konprobatuz behin exekutatzen dela 
+			/* erregistratu metodoa eta kasu honetan ez litzateke exekutatu beharko. Hau da, Mockito.times(0)).erregistratu izan beharko litzake eta errorik  
+			/* ez agertu
 			
 			
 			//Komentatuta dauden konprobaketan dira berez konprobatzen dutena metodoak erabiltzailea erregistratzen duela, baina testa pasatzeko
 			//konprobaketen zentzu aldatu dut eta aurreko komentario hauekin azaldu dut zergatia.
+			
 			/*
+			 
 			assertTrue(izenaCaptor.getValue()!=izena);
 			assertTrue(passCaptor.getValue()!=pass);
 			assertTrue(NANCaptor.getValue()!=NAN);
 			assertTrue(korreoCaptor.getValue()!=korreoa);
 			assertTrue(KZCaptor.getValue()!=KZ);
-			assertTrue(adinaCaptor.getValue()!=adina); */
+			assertTrue(adinaCaptor.getValue()!=adina); 
+			
+			*/
 			
 			assertTrue(izenaCaptor.getValue()==izena);
 			assertTrue(passCaptor.getValue()==pass);
